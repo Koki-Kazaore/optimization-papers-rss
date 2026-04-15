@@ -24,7 +24,7 @@ def generate_feed(papers: list[Paper], output_path: Path) -> None:
         fg.lastBuildDate(sorted_papers[0].first_seen_at.replace(tzinfo=timezone.utc))
 
     for paper in sorted_papers:
-        fe = fg.add_entry()
+        fe = fg.add_entry(order="append")
         fe.id(canonical_id(paper))
         fe.title(paper.title)
         fe.link(href=paper.paper_url)
