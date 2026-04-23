@@ -15,5 +15,16 @@ dependencies = [
 [project.scripts]
 update-feed = "optimization_rss.main:main"
 
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "feedparser>=6.0",
+    "pytest-mock>=3.12",
+]
+
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -3,3 +3,4 @@ __pycache__/
 *.pyo
 src/*.egg-info/
 .env
+.hypothesis/
