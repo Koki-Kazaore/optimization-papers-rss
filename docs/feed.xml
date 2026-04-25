@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 24 Apr 2026 08:01:36 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Apr 2026 07:14:10 +0000</lastBuildDate>
     <item>
       <title>OPTIMAL RISK-AVERSE DESIGN OF GREEN HYDROGEN PROJECTS IN BRAZIL: A STOCHASTIC OPTIMIZATION APPROACH</title>
       <link>https://www.semanticscholar.org/paper/028e098db1db4bbe0da161d24eb9ac1f4474e44a</link>
@@ -793,6 +793,28 @@
       <description>This paper investigates the $H_{2}/H_{\infty}$ control problem for linear stochastic differential systems under partial observation. Unlike existing studies that assume full state accessibility, we consider the scenario where the controller has access only to an observation process. The objective is to design a controller that balances the $H_2$ performance criterion with the $H_\infty$ robustness requirement under worst-case disturbances, formulated as a nonzero-sum differential game. Using the Kalman filtering method, we derive the corresponding optimal filtering equation. Furthermore, a Stochastic Bounded Real Lemma under the partial observation framework is established, providing necessary and sufficient conditions for the $H_\infty$ robustness constraint. We also show the connection between the existence of a Nash equilibrium and the solvability of the cross-coupled Riccati equations, and illustrate the effectiveness of the proposed approach through a numerical example involving an unmanned aerial vehicle (UAV).</description>
       <guid isPermaLink="false">arxiv:2604.21799</guid>
       <pubDate>Fri, 24 Apr 2026 08:01:36 +0000</pubDate>
+    </item>
+    <item>
+      <title>Improving the protein quality of New Zealand vegan diets: an optimisation modelling approach incorporating energy constraints and diet acceptability</title>
+      <link>https://www.semanticscholar.org/paper/005f514c0629cf936563b9181018b9e18d29453e</link>
+      <description>
+ 
+ Under consumption of certain indispensable amino acids (IAAs) is common in poorly planned vegan diets, but targeted dietary modifications through optimisation modelling can improve the overall protein adequacy and protein quality of these diets.
+ 
+ 
+ 
+ Shortfalls in protein and IAAs in the existing diets of a sample of New Zealand vegans (stratified into three clusters with varying protein intake) were calculated by comparing daily intakes to individual requirements. An energy-tailored optimisation using linear programming was used to add protein-rich foods present in each individual’s current diet to meet all protein and IAA requirements while respecting serving-size constraints and remaining within individual energy boundaries. When daily diets exceeded upper energy constraints, energy-dense and low-protein foods were identified and removed to accommodate the addition of protein-dense foods. Post-optimisation analysis assessed changes in intake of protein, IAAs, dietary fibre and selected micronutrients, with results compared across clusters.
+ 
+ 
+ 
+ Protein and IAA shortfalls were more prevalent in cluster 1 (85% of daily diets) compared to clusters 2 (61.1%) and 3 (30.8%). Legumes and pulses contributed most to total protein and lysine at lower energy costs, while nuts and seeds contributed most to methionine and leucine, but at higher energy costs. Optimisation resolved shortfalls using habitual diets in 90% of the daily diets. Post-optimisation micronutrient analysis showed continued risks of shortfalls for calcium, vitamin B12 and iodine.
+ 
+ 
+ 
+ Mathematical optimisation can enhance the protein adequacy and protein quality of vegan diets while preserving some individual acceptability. However, full adequacy remains challenging in energy-constrained diets with large deficits in protein and IAAs.
+</description>
+      <guid isPermaLink="false">doi:10.3389/fnut.2026.1807755</guid>
+      <pubDate>Sat, 25 Apr 2026 07:14:10 +0000</pubDate>
     </item>
   </channel>
 </rss>
