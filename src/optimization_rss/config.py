@@ -35,7 +35,7 @@ MAX_PAPERS_PER_SOURCE = 100
 
 FEED_TITLE = "Mathematical Optimization Papers"
 FEED_DESCRIPTION = "Latest papers on mathematical optimization from arXiv and Semantic Scholar"
-FEED_LINK = "https://koki-kazaore.github.io/optimization-papers-rss/feed.xml"
+FEED_LINK = "https://koki-kazaore.github.io/mathematical-optimization-papers-rss/feed.xml"
 
 STATE_FILE = Path("data/state.json")
 FEED_FILE = Path("docs/feed.xml")

@@ -8,6 +8,49 @@
     body { font-family: sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; }
     code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
     pre { background: #f4f4f4; padding: 12px; border-radius: 4px; overflow-x: auto; }
+    .feed-url-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #f4f4f4;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 12px;
+      margin: 8px 0 12px;
+    }
+    .feed-url-box code {
+      flex: 1;
+      overflow-wrap: anywhere;
+      background: transparent;
+      padding: 0;
+    }
+    .copy-button {
+      border: 1px solid #1f6feb;
+      background: #1f6feb;
+      color: #fff;
+      border-radius: 4px;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .copy-button:hover { background: #185abc; }
+    .copy-button:disabled { opacity: 0.7; cursor: default; }
+    .copy-status {
+      min-height: 1.2em;
+      color: #1a7f37;
+      font-size: 0.95rem;
+    }
+    .slack-icon {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+    @media (max-width: 520px) {
+      .feed-url-box { flex-direction: column; align-items: stretch; }
+      .copy-button { width: 100%; }
+    }
   </style>
 </head>
 <body>
@@ -20,16 +63,33 @@
 
   <h2>Subscribe</h2>
   <p>Feed URL:</p>
-  <pre><code>https://koki-kazaore.github.io/optimization-papers-rss/feed.xml</code></pre>
+  <div class="feed-url-box">
+    <code id="feed-url">https://koki-kazaore.github.io/mathematical-optimization-papers-rss/feed.xml</code>
+    <button type="button" id="copy-feed-url" class="copy-button">Copy</button>
+  </div>
+  <p id="copy-status" class="copy-status" aria-live="polite"></p>
 
   <ul>
     <li><a href="feed.xml">feed.xml</a> — RSS 2.0 feed</li>
   </ul>
 
-  <h2>Subscribe in Slack</h2>
+  <h2>
+    <img
+      class="slack-icon"
+      src="https://a.slack-edge.com/80588/marketing/img/meta/slack_hash_128.png"
+      alt="Slack"
+    />Subscribe in Slack
+  </h2>
   <ol>
     <li>Open any Slack channel or DM where you want to receive updates.</li>
-    <li>Type <code>/feed subscribe &lt;feed-url&gt;</code> and press Enter.</li>
+    <li>
+      Type this command and press Enter:
+      <div class="feed-url-box">
+        <code id="slack-subscribe-command">/feed https://koki-kazaore.github.io/mathematical-optimization-papers-rss/feed.xml</code>
+        <button type="button" id="copy-slack-command" class="copy-button">Copy</button>
+      </div>
+      <p id="copy-slack-command-status" class="copy-status" aria-live="polite"></p>
+    </li>
     <li>New papers will appear as Slack notifications when the feed is updated.</li>
   </ol>
   <p>
@@ -43,5 +103,45 @@
     stochastic optimization, nonlinear programming, robust optimization,
     combinatorial optimization, semidefinite programming, and more.
   </p>
+<script>
+  const feedUrl = document.getElementById("feed-url");
+  const copyButton = document.getElementById("copy-feed-url");
+  const copyStatus = document.getElementById("copy-status");
+  const slackSubscribeCommand = document.getElementById("slack-subscribe-command");
+  const copySlackCommandButton = document.getElementById("copy-slack-command");
+  const copySlackCommandStatus = document.getElementById("copy-slack-command-status");
+
+  copyButton.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(feedUrl.textContent.trim());
+      copyButton.textContent = "Copied!";
+      copyButton.disabled = true;
+      copyStatus.textContent = "Feed URL copied to clipboard.";
+      window.setTimeout(() => {
+        copyButton.textContent = "Copy";
+        copyButton.disabled = false;
+        copyStatus.textContent = "";
+      }, 2000);
+    } catch {
+      copyStatus.textContent = "Could not copy the feed URL.";
+    }
+  });
+
+  copySlackCommandButton.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(slackSubscribeCommand.textContent.trim());
+      copySlackCommandButton.textContent = "Copied!";
+      copySlackCommandButton.disabled = true;
+      copySlackCommandStatus.textContent = "Slack command copied to clipboard.";
+      window.setTimeout(() => {
+        copySlackCommandButton.textContent = "Copy";
+        copySlackCommandButton.disabled = false;
+        copySlackCommandStatus.textContent = "";
+      }, 2000);
+    } catch {
+      copySlackCommandStatus.textContent = "Could not copy the Slack command.";
+    }
+  });
+</script>
 </body>
 </html>
