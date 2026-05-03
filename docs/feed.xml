@@ -8,22 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 01 May 2026 08:10:31 +0000</lastBuildDate>
-    <item>
-      <title>OPTIMAL RISK-AVERSE DESIGN OF GREEN HYDROGEN PROJECTS IN BRAZIL: A STOCHASTIC OPTIMIZATION APPROACH</title>
-      <link>https://www.semanticscholar.org/paper/028e098db1db4bbe0da161d24eb9ac1f4474e44a</link>
-      <description>No abstract available.</description>
-      <guid isPermaLink="false">doi:10.17771/pucrio.acad.69614</guid>
-      <pubDate>Tue, 14 Apr 2026 14:49:22 +0000</pubDate>
-    </item>
-    <item>
-      <title>Deterministic and stochastic optimization for solving large size inverse problems in image processing</title>
-      <link>https://www.semanticscholar.org/paper/0073b5f7c09801aa9740f8f17aad511e26e56c08</link>
-      <description>
- Dans cette thèse on s’intéresse au problème des décompositions canoniques polyadiques de tenseurs d’ordre N potentiellement grands et sous différentes contraintes (non-négativité, aspect creux lié à une possible surestimation du rang du tenseur). Pour traiter ce problème, nous proposons trois nouvelles approches itératives différentes: deux approches déterministes dont une approche proximale, et une approche stochastique. La première approche étend les travaux de thèse de J-P. Royer au cas de tenseurs de dimension N. Dans l’approche stochastique, nous considérons pour la première fois dans le domaine des décompositions tensorielles, des algorithmes génétiques (mimétiques) dont principe général repose sur l’évolution d’une population de candidats. Dans le dernier type d’approche, nous avons considéré un algorithme proximal pré-conditionné (le Block-Coordinate Variable Metric Forward-Backward), algorithme fonctionnant par blocs de données avec une matrice de pré-conditionnement liée à chaque bloc et fondé sur deux étapes successives principales : une étape de gradient et une étape proximale. Finalement, les différentes méthodes suggérées sont comparées entre elles et avec d’autres algorithmes classiques de la littérature sur des données synthétiques (à la fois aléatoires ou proches des données observées en spectroscopie de fluorescence) et sur des données expérimentales réelles correspondant à une campagne de surveillance des eaux d’une rivière et visant à la détection d’apparition de polluants.</description>
-      <guid isPermaLink="false">doi:10.70675/3459c071zc780z47ffz86b0z9386f680ab57</guid>
-      <pubDate>Tue, 14 Apr 2026 14:49:22 +0000</pubDate>
-    </item>
+    <lastBuildDate>Sun, 03 May 2026 07:59:48 +0000</lastBuildDate>
     <item>
       <title>A traveling salesman problem with drone stations and speed-optimized drones</title>
       <link>https://www.semanticscholar.org/paper/00809c1a4526f981d3e462ac7a331e736f90bc83</link>
@@ -828,6 +813,13 @@
       <description>Efficient exploration is a central problem in reinforcement learning and is often formalized as maximizing the entropy of the state-action occupancy measure. While unconstrained maximum-entropy exploration is relatively well understood, real-world exploration is often constrained by safety, resource, or imitation requirements. This constrained setting is particularly challenging because entropy maximization lacks additive structure, rendering Bellman-equation-based methods inapplicable. Moreover, scalable approaches require policy parameterization, inducing non-convexity in both the objective and the constraints. To our knowledge, the only prior model-free policy-gradient approach for this setting under general policy parameterization is due to Ying et al. (2025). Unfortunately, their guarantees are limited to weak regret and ergodic averages, which do not imply that the final output is a single deployable policy that is near-optimal and nearly feasible. In this work we take a different approach to this problem, and propose Policy Gradient Penalty (PGP) method, a single-loop policy-space method that enforces general convex occupancy-measure constraints via quadratic-penalty regularization. PGP constructs pseudo-rewards that yield gradient estimates of the penalized objective, subsequently exploiting the classical Policy Gradient Theorem. We further establish the regularity of the penalized objective, providing the smoothness properties needed to justify the convergence of PGP. Leveraging hidden convexity and strong duality, we then establish global last-iterate convergence guarantees, attaining an $ε$-optimal constrained entropy value with $ε$ bounded constraint violation despite policy-induced non-convexity. We validate PGP through ablations on a grid-world benchmark and further demonstrate scalability on two challenging continuous-control tasks.</description>
       <guid isPermaLink="false">arxiv:2604.28144</guid>
       <pubDate>Fri, 01 May 2026 08:10:31 +0000</pubDate>
+    </item>
+    <item>
+      <title>A Novel Computational Framework for Causal Inference: Tree-Based Discretization with ILP-Based Matching</title>
+      <link>https://www.semanticscholar.org/paper/00c9db6ce1fe01eae4bff4fcd7934702395f1137</link>
+      <description>Causal inference is essential for data-driven decision-making, as it aims to uncover causal relationships from observational data. However, identifying causality remains challenging due to the potential for confounding and the distinction between correlation and causation. While recent advances in causal machine learning and matching algorithms have improved estimation accuracy, these methods often face trade-offs between interpretability and computational efficiency. This paper proposes a novel approach that combines a tree-based discretization technique, tailored for causal inference, with an integer linear programming-based matching algorithm. The discretization ensures approximately linear relationships for control datasets within strata, enabling effective matching, while the optimization framework optimizes for global balance. The resulting algorithm yields computational efficiency and less biased ATT estimates compared to state-of-the-art algorithms. Empirical evaluations demonstrate the proposed method's practical advantages over existing techniques in causal inference scenarios.</description>
+      <guid isPermaLink="false">arxiv:2604.27307</guid>
+      <pubDate>Sun, 03 May 2026 07:59:48 +0000</pubDate>
     </item>
   </channel>
 </rss>
